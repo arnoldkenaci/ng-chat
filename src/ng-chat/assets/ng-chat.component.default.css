@@ -2,7 +2,7 @@
 {
     position:fixed;
     z-index:999;
-    right:0;
+    right:100px;
     bottom:0;
     box-sizing: initial;
     font-size: 11pt;
@@ -266,7 +266,7 @@
             position: absolute;
             right: 14px;
             bottom: 8px;
-        }    
+        }
     .ng-chat-window .ng-chat-load-history
     {
         height: 30px;
