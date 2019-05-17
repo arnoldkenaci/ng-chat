@@ -39,7 +39,7 @@
 {
     text-decoration:none;
     float:right;
-    color: #FFF;
+    color: #9f9f9f !important;
 }
 .ng-chat-title, .ng-chat-title:hover
 {
@@ -349,7 +349,7 @@
         .ng-chat-window .ng-chat-messages .ng-chat-message.ng-chat-message-received > div.received-chat-message-container
         {
             float: left;
-            margin-left: 40px;
+            margin-left: 35px;
             padding-top: 7px;
             padding-bottom: 7px;
             border-style: solid;

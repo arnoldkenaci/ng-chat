@@ -44,7 +44,7 @@
   </div>
   <div *ngFor="let window of windows; let i = index"
     [ngClass]="{'ng-chat-window': true, 'primary-outline-color': true, 'ng-chat-window-collapsed': window.isCollapsed}"
-    [ngStyle]="{'right': (!hideFriendsList ? friendsListWidth : 0) + 120 + windowSizeFactor * i + 'px'}">
+    [ngStyle]="{'right': (!hideFriendsList ? friendsListWidth + 20 : 0) + 80 + windowSizeFactor * i + 'px'}">
     <ng-container *ngIf="window.isCollapsed">
       <div class="ng-chat-title secondary-background">
         <div class="ng-chat-title-visibility-toggle-area" (click)="onChatWindowClicked(window)">
@@ -57,7 +57,7 @@
           <span *ngIf="unreadMessagesTotal(window).length > 0"
             class="ng-chat-unread-messages-count unread-messages-counter-container primary-text">{{unreadMessagesTotal(window)}}</span>
         </div>
-        <a href="javascript:void(0);" class="ng-chat-close primary-text" (click)="onCloseChatWindow(window)">X</a>
+        <a href="javascript:void(0);" class="ng-chat-close" (click)="onCloseChatWindow(window)">&#10005;</a>
       </div>
     </ng-container>
     <ng-container *ngIf="!window.isCollapsed">
@@ -72,7 +72,7 @@
           <span *ngIf="unreadMessagesTotal(window).length > 0"
             class="ng-chat-unread-messages-count unread-messages-counter-container primary-text">{{unreadMessagesTotal(window)}}</span>
         </div>
-        <a href="javascript:void(0);" class="ng-chat-close primary-text" (click)="onCloseChatWindow(window)">X</a>
+        <a href="javascript:void(0);" class="ng-chat-close" (click)="onCloseChatWindow(window)">&#10005;</a>
         <ng-chat-options [ngClass]="'ng-chat-options-container'" [options]="defaultWindowOptions(window)"
           [chattingTo]="window" [(activeOptionTracker)]="currentActiveOption"></ng-chat-options>
       </div>

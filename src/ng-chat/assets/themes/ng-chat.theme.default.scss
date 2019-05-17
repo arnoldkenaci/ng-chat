@@ -1,5 +1,5 @@
 $primary-color: #FFF;
-$secondary-color: #91101F;
+$secondary-color: #E3E3E3;
 $text-color: #5C5C5C;
 
 %text-definition {
@@ -17,7 +17,7 @@ $text-color: #5C5C5C;
     }
     .secondary-background
     {
-        background-color: #FAFAFA;
+        background-color: #91101f;
     }
     .primary-outline-color
     {
@@ -42,7 +42,7 @@ $text-color: #5C5C5C;
     }
     .chat-window-input
     {
-        background-color: $primary-color;
+        background-color: $primary-color;   
     }
     .sent-chat-message-container,  .file-message-container
     {
