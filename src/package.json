@@ -28,6 +28,7 @@
     "templates": "gulp inline-templates",
     "transpile": "ngc",
     "package": "rollup -c",
+    "start": "ng serve --aot",
     "minify": "uglifyjs dist/bundles/ng-chat.umd.js --screw-ie8 --compress --mangle --comments --output dist/bundles/ng-chat.umd.min.js",
     "clean": "del /S *.ngsummary.json del /S *.ngfactory.ts",
     "linux-clean": "rm -f *.ngsummary.json *.ngfactory.ts",

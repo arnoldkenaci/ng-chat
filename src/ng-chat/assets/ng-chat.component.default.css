@@ -33,7 +33,7 @@
 }
     #ng-chat-people.ng-chat-people-collapsed
     {
-        height:30px;
+        height:35px;
     }
 .ng-chat-close
 {
@@ -228,6 +228,9 @@
     box-shadow: 0 4px 8px rgba(0,0,0,.25);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+}
+.hero-info-text{
+  padding: 5%;
 }
 .ng-chat-window-collapsed
 {

@@ -17,7 +17,7 @@
         <i class="check-icon"></i>
       </a>
     </div>
-    <input *ngIf="searchEnabled" id="ng-chat-search_friend" class="friends-search-bar" type="search"
+    <input id="ng-chat-search_friend" class="friends-search-bar" type="search"
       [placeholder]="localization.searchPlaceholder" [(ngModel)]="searchInput" />
     <ul id="ng-chat-users" *ngIf="!isCollapsed" [ngClass]="{'offset-search': searchEnabled}">
       <li *ngFor="let user of filteredParticipants">
@@ -44,7 +44,7 @@
   </div>
   <div *ngFor="let window of windows; let i = index"
     [ngClass]="{'ng-chat-window': true, 'primary-outline-color': true, 'ng-chat-window-collapsed': window.isCollapsed}"
-    [ngStyle]="{'right': (!hideFriendsList ? friendsListWidth + 20 : 0) + 80 + windowSizeFactor * i + 'px'}">
+    [ngStyle]="{'right': (!hideFriendsList ? friendsListWidth : 0) + 120 + windowSizeFactor * i + 'px'}">
     <ng-container *ngIf="window.isCollapsed">
       <div class="ng-chat-title secondary-background">
         <div class="ng-chat-title-visibility-toggle-area" (click)="onChatWindowClicked(window)">
